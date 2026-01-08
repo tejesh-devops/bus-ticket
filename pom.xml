@@ -10,7 +10,7 @@
     <groupId>com.devops.bus</groupId>
     <artifactId>bus-ticket-booking</artifactId>
     <version>1.0</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>Bus Ticket Booking App</name>
     <description>Simple Java console application for booking bus tickets</description>
