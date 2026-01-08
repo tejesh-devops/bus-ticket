@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Project Details -->
+    <groupId>com.devops.bus</groupId>
+    <artifactId>bus-ticket-booking</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+
+    <name>Bus Ticket Booking App</name>
+    <description>Simple Java console application for booking bus tickets</description>
+
+    <!-- Java Version -->
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
+    <!-- No dependencies needed for simple console app -->
+
+    <!-- Build Plugin to create runnable JAR -->
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>bus-tickets</groupId>
+                <artifactId>bus-ticket-artifcat</artifactId>
+                <version>3.11.0</version>
+            </plugin>
+
+            <plugin>
+                <groupId>bus-tickets</groupId>
+                <artifactId>bus-ticket-artifcat</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>BusTicketBooking</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>
+
