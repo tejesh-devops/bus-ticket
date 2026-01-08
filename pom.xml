@@ -34,8 +34,8 @@
             </plugin>
 
             <plugin>
-                <groupId>bus-tickets</groupId>
-                <artifactId>bus-ticket-artifcat</artifactId>
+                <groupId>bus-tickets-group</groupId>
+                <artifactId>bus-ticket-artifcat-group</artifactId>
                 <version>3.3.0</version>
                 <configuration>
                     <archive>
