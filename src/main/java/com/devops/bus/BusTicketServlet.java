@@ -1,9 +1,9 @@
 package com.devops.bus;
 
-import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet("/book")
@@ -43,14 +43,12 @@ public class BusTicketServlet extends HttpServlet {
 
         response.setContentType("text/html");
         response.getWriter().println("<html><body>");
-
         response.getWriter().println("<h2>Booking Confirmed</h2>");
         response.getWriter().println("Passenger Name : " + name + "<br>");
         response.getWriter().println("Bus Name : " + busName + "<br>");
         response.getWriter().println("Seats Booked : " + seats + "<br>");
         response.getWriter().println("Total Amount : ₹" + totalAmount + "<br>");
         response.getWriter().println("<b>Status : CONFIRMED</b>");
-
         response.getWriter().println("</body></html>");
     }
 }
